@@ -5,7 +5,7 @@
     - Go Lang
 - To help me find a "north" I'm going to use as a *Guide* the site [RoadMap](https://roadmap.sh/devops)
 - During this long process I'm will be documenting all topics, details, tips, **everything**
-- So this maybe(focus on **MAYBE**) can be a "guide" to you
+- So this maybe(focus on **MAYBE**) can be a "guide" to you too
 ## Go Lang
 - Like I've said above, I'm going to use GoLang to accompany me go through this learning process
 - If you have never heard of *Go* before, this links may help you understand:
