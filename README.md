@@ -1,6 +1,7 @@
 # DevOps
 ## Summary
-- 👨‍💻 👩‍💻 In development 🚧 🛠️
+1. [Learn a Programming Language - **GO**](https://github.com/rafaelbreno/devops_roadmap/tree/master/00_Learn_GO)
+    1. [Variables and Types](https://github.com/rafaelbreno/devops_roadmap/tree/master/00_Learn_GO/01_variables_and_types)
 ## Introduction
 - The purpose of this repo is to help me track my evolution in:
     - DevOps
@@ -19,6 +20,3 @@
 - I'm using for IDE [GOLand](https://www.jetbrains.com/go/) from [JetBrains](https://www.jetbrains.com/)
 - And a pretty good alternative is [Go Playground](https://play.golang.org/), an online IDE
 - With everything setup, we're ready to start programming, Let's *GO*!!!
----------
-# [Roadmap](https://roadmap.sh/devops)
-1. [Learn a Programming Language - **GO**](https://github.com/rafaelbreno/devops_roadmap/tree/master/00_Learn_GO)
