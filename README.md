@@ -1,5 +1,6 @@
 # DevOps
 ## Summary
+- 👨‍💻 👩‍💻 In development 🚧 🛠️
 1. [Learn a Programming Language - **GO**](https://github.com/rafaelbreno/devops_roadmap/tree/master/00_Learn_GO)
     1. [Variables and Types](https://github.com/rafaelbreno/devops_roadmap/tree/master/00_Learn_GO/01_variables_and_types)
 ## Introduction

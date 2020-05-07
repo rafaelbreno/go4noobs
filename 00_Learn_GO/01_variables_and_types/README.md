@@ -123,3 +123,43 @@
             // fmt.Print("Main Variable:", local)
           }
       ```
+5. Types
+    - The title is self-explanatory, type is the *"format"* of a designed variable
+    - Assigning a type for a variable it means that variable can only accept it until the end of the program
+    - These types can be:
+        - Primitive
+            - | Title   | Type    | %  | Example   |
+              |---------|---------|----|-----------|
+              | Integer | int     | %b | 10        |
+              | Float   | float32 | %b | 10.2      |
+              | Boolean | bool    | %t | true      |
+              | String  | string  | %t | "Example" |
+        - [Derived](https://www.tutorialspoint.com/go/go_data_types.htm)
+            - Pointer
+            - Array
+            - Structure
+            - Union
+            - Function
+            - Slice
+            - Interface
+            - Map
+            - Channel
+    - For now I'm going to stick with only *Primitive* types
+    - ```go
+          var a = 10
+          var b float32
+          /*
+          Can't assign a value after declaring a variable out of a func
+          b = 20
+          */
+          
+          func main()  {
+            b = 20.147
+            var c bool = true
+            var d string = "Rafael"
+            fmt.Printf("Var: %v , Type: %T\n", a, a)
+            fmt.Printf("Var: %v , Type: %T\n", b, b)
+            fmt.Printf("Var: %v , Type: %T\n", c, c)
+            fmt.Printf("Var: %v , Type: %T", d, d)
+          }
+      ```
