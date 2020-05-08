@@ -163,3 +163,6 @@
             fmt.Printf("Var: %v , Type: %T", d, d)
           }
       ```
+6. Custom Type
+    - In GO there is var types that the developer creates
+    
