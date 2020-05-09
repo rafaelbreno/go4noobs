@@ -102,7 +102,7 @@
 4. Scope
     - Scope is an area with limits defined by ``{}``
         - For Example``{ ...in scope... } ...out of scope`` 
-    - A good example of it is a "Global Variable", its **scope** is the entire code, can be used in every *func* of a file
+    - A good example of it is a "Global Variable", its **scope** is the entire code, can be used in every *func* of a package
     - At the code below we can see that the variable **global** can be used 
     - ```go
           var global = 10
@@ -124,16 +124,16 @@
           }
       ```
 5. Types
-    - The title is self-explanatory, type is the *"format"* of a designed variable
+    - The title is self-explanatory, type is the *"format"* of a designated variable
     - Assigning a type for a variable it means that variable can only accept it until the end of the program
-    - These types can be:
+    - These types can be(some examples):
         - Primitive
-            - | Title   | Type    | %  | Example   |
-              |---------|---------|----|-----------|
-              | Integer | int     | %b | 10        |
-              | Float   | float32 | %b | 10.2      |
-              | Boolean | bool    | %t | true      |
-              | String  | string  | %t | "Example" |
+            - | Title   | Type    | Example   |
+              |---------|---------|-----------|
+              | Integer | int     | 10        |
+              | Float   | float32 | 10.2      |
+              | Boolean | bool    | true      |
+              | String  | string  | "Example" |
         - [Derived](https://www.tutorialspoint.com/go/go_data_types.htm)
             - Pointer
             - Array
@@ -164,7 +164,7 @@
           }
       ```
 6. Custom Type
-    - In GO there is var types that the developer creates
+    - In Go there is var types that the developer creates
     - This is something usual in the future, for now its more like an abstract idea
     - ```go
         // type myType subType
