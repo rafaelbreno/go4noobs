@@ -187,3 +187,22 @@
           main.myType
         ```
     - Even with the same values "*a(int)*" != "*b(myType)*", because of the var type
+7. Type Conversion
+    - To convert the type, it's just needed to use a simple function
+    - ``var a typeA = typeA(b typeB)``
+    - ```go
+          //Creating a type based on 'int'
+          type myType int
+          var b myType = 20        
+          func main() {
+            a := 10
+            fmt.Println("Passing value from b to a:")
+            fmt.Printf("b myType -> Type %T , Value %v\n", b, b)
+            a = int(b)
+            fmt.Printf("a int -> Type %T , Value %v\n", a, a)
+            fmt.Println("Passing value from a to b:")
+            b = myType(a)
+            fmt.Printf("b myType -> Type %T , Value %v\n", b, b)
+            fmt.Printf("a int -> Type %T , Value %v\n", a, a)
+          }
+      ```
