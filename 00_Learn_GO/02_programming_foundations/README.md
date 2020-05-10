@@ -1,0 +1,19 @@
+#### 02 Programming Foundations
+1. Boolean
+    - Boolean is a binary type(can assume true[1] or false[0])
+    - Its value can be determined by a condition(*"==", "!=", ">", "=>"* are some examples)
+        - *"=="* - Equal ...
+        - *"!="* - Different ...
+        - *">"*  - Greater than ...
+        - *">="* - Greater or equal than ...
+    - ```
+          func main() {
+            a := 10
+            b := 20
+            fmt.Printf("a = %v |||  b = %v\n", a, b)
+            fmt.Printf("a == b : %v\n", a == b)
+            fmt.Printf("a != b : %v\n", a != b)
+            fmt.Printf("a >= b : %v\n", a >= b)
+            fmt.Printf("a <= b : %v\n", a <= b)
+          }
+      ```
