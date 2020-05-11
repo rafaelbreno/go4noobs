@@ -1,17 +1,9 @@
 # DevOps
 ## Summary
 - 👨‍💻 👩‍💻 In development 🚧 🛠️
-1. [Learn a Programming Language - **GO**](https://github.com/rafaelbreno/devops_roadmap/tree/master/00_Learn_GO)
-    1. [Variables and Types](https://github.com/rafaelbreno/devops_roadmap/tree/master/00_Learn_GO/01_variables_and_types)
+1. [Variables and Types](https://github.com/rafaelbreno/go4noobs/tree/master/01_variables_and_types)
+1. [Programming Foundations](https://github.com/rafaelbreno/go4noobs/tree/master/02_programming_foundations)
 ## Introduction
-- The purpose of this repo is to help me track my evolution in:
-    - DevOps
-    - Go Lang
-- To help me find a "north" I'm going to use as a *Guide* the site [RoadMap](https://roadmap.sh/devops)
-- During this long process I'm will be documenting all topics, details, tips, **everything**
-- So this maybe(focus on **MAYBE**) can be a "guide" to you too
-## Go Lang
-- Like I've said above, I'm going to use GoLang to accompany me go through this learning process
 - If you have never heard of *Go* before, this links may help you understand:
     - [Official Documentation](https://golang.org/doc/)
     - [Is Go OOP?](https://golang.org/doc/faq#Is_Go_an_object-oriented_language) <small><small>no and yes ???</small></small>
