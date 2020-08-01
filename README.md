@@ -1,4 +1,4 @@
-# DevOps
+# Go
 ## Summary
 - 👨‍💻 👩‍💻 In development 🚧 🛠️
 1. [Variables and Types](https://github.com/rafaelbreno/go4noobs/tree/master/01_variables_and_types)
@@ -11,5 +11,5 @@
     - A special thanks to *Ellen Körbes*, for bringing an amazing GOLang content to Brazil in PT-BR
         - [Twitter](https://twitter.com/ellenkorbes) || [GOLang Playlist<small>(in pt-br)</small>](https://www.youtube.com/playlist?list=PLCKpcjBB_VlBsxJ9IseNxFllf-UFEXOdg)
 - I'm using for IDE [GOLand](https://www.jetbrains.com/go/) from [JetBrains](https://www.jetbrains.com/)
-- And a pretty good alternative is [Go Playground](https://play.golang.org/), an online IDE
+- A pretty good alternative is [Go Playground](https://play.golang.org/), an online IDE
 - With everything setup, we're ready to start programming, Let's *GO*!!!
