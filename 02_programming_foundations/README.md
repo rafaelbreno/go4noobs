@@ -51,7 +51,7 @@
         - _0 :_ Pad with leading zeros
     - [More about string](https://blog.golang.org/strings)
 3. Constants
-    - Const are assigned outsite the scope of functions
+    - Const, located outside the scope of functions
     - The assigned value doesn't imply the type
     - E.g
         - _const c = 10_
@@ -80,4 +80,21 @@
       ```
     - _Const_ type, defined when used 
     - _Var_ type, defined when assigned
-     
+    - Const can also be declared like this:
+        - ```
+          const {
+              a = 10
+              b = 20
+              c = 30
+          }
+          ```
+4. Iota
+    - Iota by _first sight_ looks like a counter inside const's scope
+        - ```
+            const (
+                a = iota // iota == 0
+                b = iota // iota == 1
+                c = iota // iota == 2
+                d = iota // iota == 3
+            )
+          ```
