@@ -214,3 +214,22 @@
                 fmt.Println(j) // J doesn't exist
             ```
         - The __j__ variable won't be accessible out of the [scope]() of _for loop_
+08. _Conditional_
+    - Conditionals are decisions inside the code
+    -   ```go
+            package main
+            
+            import "fmt"
+            
+            func main() {
+            	var numType string
+            	for i := 1; i < 10; i++ {
+            		if i % 2 == 0 {
+            			numType = "even"
+            		} else {
+            			numType = "odd"
+            		}
+            		fmt.Println(i, " - ", numType)
+            	}
+            }
+        ```
