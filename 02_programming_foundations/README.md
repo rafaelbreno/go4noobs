@@ -233,3 +233,33 @@
             	}
             }
         ```
+    -   ```
+            package main
+            
+            import "fmt"
+            
+            func main() {
+            	var numType string
+            	for i := 1; i < 10; i++ {
+            		if i%2 == 0 {
+            			numType = "even"
+            		} else {
+            			numType = "odd"
+            		}
+            	}
+            
+            	switch numType {
+            		case "even": {
+            			fmt.Println("The last number was an even number!")
+            		} 
+            		case "odd": {
+            			fmt.Println("The last number was an odd number!")
+            		}
+            		default: {
+            			fmt.Println("The values doesn't match any one of the possibilities")
+            		}
+            	}
+            }
+        ```
+    - The switch can be adapted to perform certain action depending on the variable type
+        - ``````
