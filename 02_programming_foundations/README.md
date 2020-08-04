@@ -206,3 +206,11 @@
             	}
             }
         ```
+    - Just a _disclaimer_, when doing this:
+        -   ```
+                for j := 0; j < 5; j++ {
+                    fmt.Println("- ", j) // J exists
+                }
+                fmt.Println(j) // J doesn't exist
+            ```
+        - The __j__ variable won't be accessible out of the [scope]() of _for loop_
