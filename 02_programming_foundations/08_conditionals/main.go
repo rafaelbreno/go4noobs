@@ -56,9 +56,14 @@ func main() {
 		}
 	}
 
+	// unknown = int(1) assign integer value
+	// unknown = "string" assign string value
+	// unknown = 1.01 assign a float value
+	unknown = true
+
 	switch unknown.(type) {
 	case int:
-		fmt.Println("This is a integer!")
+		fmt.Println("This is an integer!")
 	case bool:
 		fmt.Println("This is a boolean")
 	case string:
