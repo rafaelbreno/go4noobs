@@ -1,5 +1,5 @@
 #### 02 Programming Foundations
-1. Boolean
+1. [_Boolean_](https://golang.org/ref/spec#Boolean_types)
     - Boolean is a binary type(can assume true[1] or false[0])
     - Its value can be determined by relational operators(*"==", "!=", ">", "=>"* are some examples)
         - *"=="* - Equal ...
@@ -17,7 +17,7 @@
             fmt.Printf("a <= b : %v\n", a <= b)
           }
       ```
-2. String
+2. [_String_](https://golang.org/ref/spec#String_literals)
     - String is an array os _characters_
     - ```go
         package main
@@ -50,7 +50,7 @@
         - _' '(space):_ Leave a space for elided sign on numbers _(% b)_
         - _0 :_ Pad with leading zeros
     - [More about string](https://blog.golang.org/strings)
-3. Constants
+3. [_Constants_](https://golang.org/ref/spec#Constant_declarations)
     - Const, located outside the scope of functions
     - The assigned value doesn't imply the type
     - E.g
@@ -88,7 +88,7 @@
               c = 30
           }
           ```
-4. Iota
+4. [_Iota_](https://golang.org/ref/spec#Iota)
     - Iota by _first sight_ looks like a counter inside const's scope
         - ```
             const (
@@ -138,7 +138,7 @@
     - __Disclaimer!!!__ This is the basic explanation about procedural paradigm
     - __I truly__ recommend you reserve a tiny bit of your day to give it a try.
     - Just to search about some "rules" and "good behavior" when programming in _Go_
-07. Loop _For_
+07. [Loop _For_](https://golang.org/ref/spec#For_statements)
     - In go every loop is a _for loop_
         - Do
         - Do While
@@ -214,7 +214,7 @@
                 fmt.Println(j) // J doesn't exist
             ```
         - The __j__ variable won't be accessible out of the [scope]() of _for loop_
-08. _Conditional_
+08. [_Conditional_](https://golang.org/ref/spec#If_statements)
     - Conditionals are decisions inside the code
     -   ```go
             package main
@@ -286,3 +286,77 @@
                     }
               }
           ```
+09. [_Logical Operator_](https://golang.org/ref/spec#Logical_operators)
+    - There are 3 logical operators
+        - __&&__ (AND)
+            - A _&&_ B = _"if A then B, else false"_
+            - |    A|    B|A _&&_ B|
+              |-----|-----|--------|
+              |false|false|   false|
+              |false|true |   false|
+              |true |false|   false|
+              |true |true |    true|
+          
+        - __||__ (OR)
+            - A _||_ B = _"if A then true else B"_
+            - |    A|    B|A _\\\\_ B|
+              |-----|-----|--------|
+              |false|false|   false|
+              |false|true |    true|
+              |true |false|    true|
+              |true |true |    true|
+        - __!__ (NOT)
+            - _!_ A = _"not A"_
+            - |A    |   !A|
+              |-----|-----|
+              |false| true|
+              |true |false|
+    - __DISCLAIMER__
+        - The function ``strconv.FormatBool`` receive a boolean as parameter and return it in string form
+        - For example _strconv.FormatBool(true)_ will return _"true"_
+    -   ```
+            package main
+            
+            import (
+            	"fmt"
+            	"strconv"
+            )
+            
+            /*
+            * In this program I'll be developing
+            * a program that will build the same
+            * tables shown at README.md file
+            */
+            func main()  {
+            	var values [2]bool
+            	values[0] = false
+            	values[1] = true
+            	/*
+            	 * values = [false, true]
+            	 */
+            	fmt.Println("---And Operator---")
+            	for _, valueA := range values {
+            		for _, valueB := range values {
+            			fmt.Printf("%s && %s = %s\n",
+            				strconv.FormatBool(valueA),
+            				strconv.FormatBool(valueB),
+            				strconv.FormatBool(valueA && valueB))
+            		}
+            	}
+            	fmt.Println("---Or Operator---")
+            	for _, valueA := range values {
+            		for _, valueB := range values {
+            			fmt.Printf("%s || %s = %s\n",
+            				strconv.FormatBool(valueA),
+            				strconv.FormatBool(valueB),
+            				strconv.FormatBool(valueA || valueB))
+            		}
+            	}
+            	fmt.Println("---Not Operator---")
+            	for _, valueA := range values {
+            		fmt.Printf("!%s = %s\n",
+            			strconv.FormatBool(valueA),
+            			strconv.FormatBool(!valueA))
+            	}
+            }
+        ```
