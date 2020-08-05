@@ -1,8 +1,12 @@
 # Go
+- __Disclaimer!!__
+- __ 👨‍💻 👩‍💻 In development 🚧 🛠 __
+- This repo __must__ and __will__ suffer some __major__ updates and modifications along with my learning curve
+- Feel totally free to fork and PR this repo
+- Enjoy!️
 ## Summary
-- 👨‍💻 👩‍💻 In development 🚧 🛠️
 1. [Variables and Types](https://github.com/rafaelbreno/go4noobs/tree/master/01_variables_and_types)
-1. [Programming Foundations](https://github.com/rafaelbreno/go4noobs/tree/master/02_programming_foundations)
+2. [Programming Foundations](https://github.com/rafaelbreno/go4noobs/tree/master/02_programming_foundations)
 ## Introduction
 - If you have never heard of *Go* before, this links may help you understand:
     - [Official Documentation](https://golang.org/doc/)
