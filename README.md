@@ -18,5 +18,10 @@
 - A pretty good alternative is [Go Playground](https://play.golang.org/), an online IDE
 - With everything setup, we're ready to start programming, Let's *GO*!!!
 ## Some Useful Links
-- [Go By Example](https://gobyexample.com/)
-    - Like a cheatsheet for _Go_
+- _Official_
+    - [Go ref/spec](https://golang.org/ref/spec)
+    - [Effective Go](https://golang.org/doc/effective_go.html)
+    - [Articles](https://golang.org/doc/#articles)
+- _Community_
+    - [Go By Example](https://gobyexample.com/)
+        - Like a cheatsheet for _Go_
