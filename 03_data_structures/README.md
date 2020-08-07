@@ -104,17 +104,48 @@
             		}
             	}
             	fmt.Println(slice2)
-            	/*
-            	 * how that works?
-            	 * append is a function that receive 2 params
-            	 * append(slice, element) = [slice, element]
-            	 * so, to create a prepend just invert the order
-            	 * append(element, slice), but in this case, element isn't a slice type, and slice isn't a element
-            	 * to convert them we do this
-            	 * append([]int{element}, slice...)
-            	 * "slice..." will transform slice into element
-            	 * "[]int{element}" will transform element in a slice of int with unique item element
-            	 * kinda confusing but that makes sense
-            	*/
             }
         ```
+    - At the code above you saw the function append()
+        - append receive _+2_ params
+            - slice
+            - element
+        - Why _"+2"_?
+            - Because append() is a variadic function
+    - Variadic functions:
+        - Is a function that can receive infinite elements
+    -   ```go
+            package main
+        
+            import "fmt"
+        
+            var sliceBase []int
+            var sliceBase2 []int
+            var sliceBase3 []int
+            var sliceAdd = []int{1, 2, 3, 4, 5, 6}
+            
+            func main(){       
+                // This:
+                fmt.Println("\n-----Base1-----")
+                for _, value := range sliceAdd {
+                    sliceBase = append(sliceBase, value)
+                }
+                fmt.Println(sliceBase)
+            
+                // Is the same of this:
+                fmt.Println("\n-----Base2-----")
+                /*
+                    Look here
+                    append([]interface{}, 1, 2, 3, 4, ..., n - 1, n)
+                */
+                sliceBase2 = append(sliceBase2, 1, 2, 3, 4, 5, 6)
+                fmt.Println(sliceBase2)
+            
+                // And this:
+                fmt.Println("\n-----Base3-----")
+                sliceBase3 = append(sliceBase3, sliceAdd...)
+                fmt.Println(sliceBase3)
+            }
+        ```
+    - The code above can explain why when I wanted to _"prepend"_ a value I did this:
+        - ``slice = append([]int{1}, slice...)``

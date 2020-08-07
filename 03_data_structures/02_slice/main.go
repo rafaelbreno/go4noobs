@@ -5,6 +5,11 @@ import "fmt"
 var slice1 []int
 var slice2 []int
 
+var sliceBase []int
+var sliceBase2 []int
+var sliceBase3 []int
+var sliceAdd = []int{1, 2, 3, 4, 5, 6}
+
 func main() {
 	/* append will a insert a value at the end of the slice
 	 * Imagine that a slice is a queue of items
@@ -47,4 +52,22 @@ func main() {
 	 * "[]int{element}" will transform element in a slice of int with unique item element
 	 * kinda confusing but that makes sense
 	 */
+
+	fmt.Println("\n-----Base1-----")
+	for _, value := range sliceAdd {
+		sliceBase = append(sliceBase, value)
+	}
+	fmt.Println(sliceBase)
+
+	fmt.Println("\n-----Base2-----")
+	/*
+		Look here
+		append([]interface{}, 1, 2, 3, 4, ..., n - 1, n)
+	*/
+	sliceBase2 = append(sliceBase2, 1, 2, 3, 4, 5, 6)
+	fmt.Println(sliceBase2)
+
+	fmt.Println("\n-----Base3-----")
+	sliceBase3 = append(sliceBase3, sliceAdd...)
+	fmt.Println(sliceBase3)
 }
