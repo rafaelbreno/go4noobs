@@ -209,3 +209,9 @@
             	fmt.Println(union)
             }
         ```
+04. [_Slice Make_](https://golang.org/doc/effective_go.html#allocation_make)
+    - [_ref/spec_](https://golang.org/ref/spec#Making_slices_maps_and_channels)
+    - The function __make__ takes a _Type T_
+        - _Slice_
+        - _Map_
+        - _Channel_
