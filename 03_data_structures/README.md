@@ -212,6 +212,30 @@
 04. [_Slice Make_](https://golang.org/doc/effective_go.html#allocation_make)
     - [_ref/spec_](https://golang.org/ref/spec#Making_slices_maps_and_channels)
     - The function __make__ takes a _Type T_
-        - _Slice_
-        - _Map_
-        - _Channel_
+        - _Slice_ - The one we're seeing
+        - [_Map_]() - _Don't mind this one, we'll see it later_
+        - [_Channel_]() - _Don't mind this one, we'll see it later_
+    - _make(Type T, length, capacity)_
+        - _Type T_ - The variable type it will be creating
+        - _Length_ - Initialize the quantity of zeroed values
+        - _Capacity_ - Max quantity of elements
+    -   ```go
+            package main
+            
+            import "fmt"
+            
+            func main() {
+                /*
+                 * Slice of type: []int
+                 * length of 5
+                 * capacity of 10
+                 */
+            	slice := make([]int, 5, 10)
+            
+            	for key, value := range slice {
+            		fmt.Println(key, "-", value)
+            	}
+            }
+        ```
+        - This will output __5__ _zeroed_ values
+        - 
