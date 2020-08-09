@@ -238,4 +238,29 @@
             }
         ```
         - This will output __5__ _zeroed_ values
-        - 
+    - How was said before the slices are _flexible_
+    - So even when the capacity is "enabled", with append it's possible to add more item
+        -   ```go
+                package main
+                
+                import "fmt"
+                
+                func main() {
+                
+                	fmt.Println("----Len < Cap")
+                	slice := make([]int, 3, 5)
+		            // 3 of 5
+                	fmt.Println("----Overflowing Cap----")
+                	for i := 1; i <= 5; i++ {
+                		slice = append(slice, i)
+                	}
+                    //10 out of "5"
+                	for key, value := range slice {
+                		fmt.Println(key, "-", value)
+                	}
+                	/*
+                	 * When appending, you can overflown the capacity
+                	 * because slices are flexible and expandable
+                	*/
+                }
+            ```
