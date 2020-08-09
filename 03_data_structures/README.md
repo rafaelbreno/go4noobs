@@ -384,3 +384,34 @@
     - You can see that the _Case 1_ have way more steps than _Case 2_
     - That can explain why the difference between those times
     - Allowing you to be more concerned about execution time
+05. [_Maps_](https://golang.org/doc/effective_go.html#maps)
+    - _"\[...\] data structure that associate values of one type (the key) with values of another type (the element or value)."_
+    - That means we a _"key"_ associated to _"value"_ of different types
+    -   ```go
+            package main
+            
+            import "fmt"
+            
+            func main()  {
+            	/* Just explaining the map structure
+            	 * map[key]value
+            	 * the 'key' is what is searched
+            	 * 'value' is what is returned
+            	**/
+            	intString := make(map[int]string, 10)
+            
+            	// 02_programming_foundations/02_string
+            	hello := []byte("hello")
+            
+            	for key, value := range hello {
+            		intString[key] = string(value)
+            	}
+            	/* The output will follow the structure
+            	 * key:value , almost like JSON
+            	 * [0:h 1:e 2:l 3:l 4:0]
+            	**/
+            	fmt.Println(intString)
+            }
+        ```
+        - [02_programming_foundations/02_string](https://github.com/rafaelbreno/go4noobs/tree/master/02_programming_foundations#02-programming-foundations)
+    - 
