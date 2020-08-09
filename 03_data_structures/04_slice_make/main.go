@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 
@@ -67,4 +70,15 @@ func main() {
 			}
 		}
 	}
+
+	start1 := time.Now()
+	slice1 := make([]int, 3, 5)
+	slice1 = append(slice1, 1, 2, 3, 4)
+	fmt.Println("Time with low cap: ", time.Since(start1))
+
+	start2 := time.Now()
+	slice2 := make([]int, 3, 10)
+	slice2 = append(slice2, 1, 2, 3, 4)
+	fmt.Println("Time with high cap: ", time.Since(start2))
+
 }
