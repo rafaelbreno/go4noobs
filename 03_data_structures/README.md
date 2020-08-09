@@ -264,3 +264,8 @@
                 	*/
                 }
             ```
+    - Reminder: 
+        - Multidimensional Slices work a like as multidimensional arrays(seen before at _item 1_)
+        -   ```
+                
+            ```
