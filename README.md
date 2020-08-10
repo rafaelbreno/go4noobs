@@ -3,7 +3,8 @@
 - __ 👨‍💻 👩‍💻 In development 🚧 🛠 __
 - This repo __must__ and __will__ suffer some __major__ updates and modifications along with my learning curve
 - Feel totally free to fork and PR this repo
-- Enjoy!️
+- Enjoy!
+- [_Gopher Code of Conduct_](https://golang.org/conduct#values)
 ## Summary
 1. [Variables and Types](https://github.com/rafaelbreno/go4noobs/tree/master/01_variables_and_types)
 2. [Programming Foundations](https://github.com/rafaelbreno/go4noobs/tree/master/02_programming_foundations)
