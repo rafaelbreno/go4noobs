@@ -42,6 +42,19 @@ func main() {
 	for key, value := range hello {
 		intString[key] = string(value)
 	}
+
+	/*
+	 * The following verification is called "comma ok"
+	 * When you try to get a value from an non-existent key
+	 * it will return you a "zeroed" value
+	 * To show you if the value is a "0" or zeroed value
+	 * "ok" will return a boolean value
+	 * true - the value exists
+	 * false - value non-existent and zeroed
+	**/
+	value, ok := intString[13]
+	fmt.Println("Value:", value, "- Exists:", ok)
+
 	/* The output will follow the structure
 	 * key:value , almost like JSON
 	 * [0:h 1:e 2:l 3:l 4:0]

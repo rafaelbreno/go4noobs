@@ -414,6 +414,40 @@
             }
         ```
         - [02_programming_foundations/02_string](https://github.com/rafaelbreno/go4noobs/tree/master/02_programming_foundations#02-programming-foundations)
+    - [_Comma Ok_](https://golang.org/doc/effective_go.html#maps)
+        -   ```go
+                package main
+                
+                import "fmt"
+                
+                func main() {
+                    /* Just explaining the map structure
+                     * map[key]value
+                     * the 'key' is what is searched
+                     * 'value' is what is returned
+                    **/
+                    intString := make(map[int]string, 10)
+                
+                    // 02_programming_foundations/02_string
+                    hello := []byte("hello")
+                
+                    for key, value := range hello {
+                        intString[key] = string(value)
+                    }
+                
+                    /*
+                     * The following verification is called "comma ok"
+                     * When you try to get a value from an non-existent key
+                     * it will return you a "zeroed" value
+                     * To show you if the value is a "0" or zeroed value
+                     * "ok" will return a boolean value
+                     * true - the value exists
+                     * false - value non-existent and zeroed
+                    **/
+                    value, ok := intString[13]
+                    fmt.Println("Value:", value, "- Exists:", ok)
+                }
+            ```
     - Example, mapping functions:
         -   ```go
                 package main
@@ -473,4 +507,3 @@
                 }
             ```
         - [Functions]()
-        
