@@ -414,4 +414,63 @@
             }
         ```
         - [02_programming_foundations/02_string](https://github.com/rafaelbreno/go4noobs/tree/master/02_programming_foundations#02-programming-foundations)
-    - 
+    - Example, mapping functions:
+        -   ```go
+                package main
+                
+                import "fmt"
+                
+                /* Don't need to be scared
+                 * TODO: Add chapter url
+                 * We'll be studying function at Chapter
+                 * func funcName(params) returnType {
+                 * 		func scope
+                 * }
+                **/
+                
+                /* Name: returnTrue
+                 * Params: nothing
+                 * Return Type: String
+                 * Return Value: "true"
+                */
+                func returnTrue() string  {
+                    return "True"
+                }
+                
+                /* Name: returnFalse
+                 * Params: nothing
+                 * Return Type: String
+                 * Return Value: "false"
+                 */
+                func returnFalse() string  {
+                    return "False"
+                }
+                
+                func main() {
+                    /* Here's a little more "advanced" example
+                     * we'll be using functions
+                     * Don't need to be scared, we'll be entering in that chapter
+                     * Here:
+                     * FOR NOW You only need to know that a function, is a structure
+                     * that returns something
+                    **/
+                    funcs := map[int]func()string{
+                      //key: function
+                        0: returnFalse,
+                        1: returnTrue,
+                    }
+                
+                    // key, value := range map
+                    for _, f := range funcs {
+                        /* r will be the return valued from a function
+                         * Again, don't need to get frighten about function
+                         * we'll be studying it more deeply again at chapter
+                         * TODO: add function chapter link
+                        **/
+                        r := f()
+                        fmt.Println(r)
+                    }
+                }
+            ```
+        - [Functions]()
+        
