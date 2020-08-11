@@ -401,16 +401,29 @@
             	intString := make(map[int]string, 10)
             
             	// 02_programming_foundations/02_string
-            	hello := []byte("hello")
+            	hello := []byte("hello!!")
             
             	for key, value := range hello {
             		intString[key] = string(value)
             	}
             	/* The output will follow the structure
             	 * key:value , almost like JSON
-            	 * [0:h 1:e 2:l 3:l 4:0]
+            	 * [0:h 1:e 2:l 3:l 4:0 5:! 6:!]
             	**/
             	fmt.Println(intString)
+                
+                /* Oh now, I made a little typo
+                 * By mistake I've added a two "!" instead of one
+                 * so to remove the last "!", exists a simple function
+                 * delete(map, key)
+                 * remember, key is before the ":"
+                 * e.g: 1:e
+                 * "1" is the key, "e" is the value
+                */
+                delete(intString, 6)
+        
+                fmt.Println(intString)
+                // prints [0:h 1:e 2:l 3:l 4:0 5:!]    
             }
         ```
         - [02_programming_foundations/02_string](https://github.com/rafaelbreno/go4noobs/tree/master/02_programming_foundations#02-programming-foundations)
@@ -507,4 +520,5 @@
                 }
             ```
         - [Functions]()
-    - __Disclaimer!!__ - Maps don't have an order
+    - __Disclaimer!!__
+        - Maps don't have an order, so every _loop_ can be different in a _different order_
