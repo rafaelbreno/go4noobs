@@ -8,6 +8,7 @@
 ## Summary
 1. [Variables and Types](https://github.com/rafaelbreno/go4noobs/tree/master/01_variables_and_types)
 2. [Programming Foundations](https://github.com/rafaelbreno/go4noobs/tree/master/02_programming_foundations)
+3. [Data Structures](https://github.com/rafaelbreno/go4noobs/tree/master/03_data_structures)
 ## Introduction
 - If you have never heard of *Go* before, this links may help you understand:
     - [Official Documentation](https://golang.org/doc/)
