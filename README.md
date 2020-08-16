@@ -9,6 +9,9 @@
 1. [Variables and Types](https://github.com/rafaelbreno/go4noobs/tree/master/01_variables_and_types)
 2. [Programming Foundations](https://github.com/rafaelbreno/go4noobs/tree/master/02_programming_foundations)
 3. [Data Structures](https://github.com/rafaelbreno/go4noobs/tree/master/03_data_structures)
+4. [Programming Foundations II](https://github.com/rafaelbreno/go4noobs/tree/master/04_programming_foundations_2)
+99. _Projects_ 
+    1. [Go Request Validator](https://github.com/rafaelbreno/go-request-validator)
 ## Introduction
 - If you have never heard of *Go* before, this links may help you understand:
     - [Official Documentation](https://golang.org/doc/)
