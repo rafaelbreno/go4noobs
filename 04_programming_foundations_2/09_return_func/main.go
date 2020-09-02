@@ -50,6 +50,7 @@ func main() {
 	// opt = 2
 	mult := math(2)
 
-	fmt.Println("Sum:", sum(1, 2, 3, 4, 5))
-	fmt.Println("Multiplication:", mult(1, 2, 3, 4, 5))
+	// Can be done in both ways
+	fmt.Println("Sum:", sum(1, 2, 3, 4, 5), " - ", math(1)(1, 2, 3, 4, 5))
+	fmt.Println("Multiplication:", mult(1, 2, 3, 4, 5), " - ", math(2)(1, 2, 3, 4, 5))
 }
