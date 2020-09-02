@@ -42,6 +42,7 @@
     06. [_Interfaces_](https://github.com/rafaelbreno/go4noobs/tree/master/04_programming_foundations_2/06_interfaces)
     07. [_Literal Functions_](https://github.com/rafaelbreno/go4noobs/tree/master/04_programming_foundations_2/07_literal_funcs)
     08. [_Function as Expression_](https://github.com/rafaelbreno/go4noobs/tree/master/04_programming_foundations_2/08_func_as_exp)
+    09. [_Return Function_](https://github.com/rafaelbreno/go4noobs/tree/master/04_programming_foundations_2/09_return_func)
 99. _Projects_ 
     1. [Go Request Validator](https://github.com/rafaelbreno/go-request-validator)
 ## Introduction
