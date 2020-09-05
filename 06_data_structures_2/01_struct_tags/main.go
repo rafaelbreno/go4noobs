@@ -39,7 +39,15 @@ func main() {
 		 * 2 - Country
 		*/
 		field := typePerson.Field(i)
+
+		/* field.Name will return the name of the field(Name, Age, Country)
+		 * v.Field() will return it's value
+		*/
 		fmt.Println("Field: ", field.Name, " - Value: ", v.Field(i))
+		/* field.Tag.Lookup will search a input and return 2 params
+		 * tag - If found, return it's value 
+		 * ok - boolean if the tag was found
+		*/
 		if tag, ok := field.Tag.Lookup("max"); ok {
 			fmt.Println("Max: ", tag)
 		}
