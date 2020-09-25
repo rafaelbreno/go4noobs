@@ -64,3 +64,27 @@
 - _Community_
     - [Go By Example](https://gobyexample.com/)
         - Like a cheatsheet for _Go_
+
+## Installing GO in Ubuntu
+- Download package from the [Official Download Page](https://golang.org/dl/)
+    - In my case the filename is _"go1.15.2.linux-amd64.tar.gz"_
+- Open your terminal, and follow these steps
+- > `$ mkdir ~/go`
+- > `$ sudo mv ~/Downloads/go1.15.2.linux-amd64.tar.gz ~/go`
+- > `$ cd ~/go`
+- > `$ sudo tar -C /usr/local -xzf go1.15.2.linux-amd64.tar.gz`
+- Copy these:
+    -   ```shell
+            export GOPATH=$HOME/go
+            export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+        ```
+- Profile installation
+    - Paste Here
+        - > `$ sudo nano ~/.profile`
+        - > `$ /bin/bash -c ‘source ~/.profile'`
+- System-wide installation
+    - > `$ sudo nano /etc/profile`
+    - > `$ /bin/bash -c ‘source /etc/profile’`
+- Re-open your terminal
+- Test with:
+    - `$ go version`
