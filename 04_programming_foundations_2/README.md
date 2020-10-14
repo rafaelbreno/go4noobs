@@ -11,3 +11,5 @@
 08. [_Function as Expression_](https://github.com/rafaelbreno/go4noobs/tree/master/04_programming_foundations_2/08_func_as_exp)
 09. [_Return Function_](https://github.com/rafaelbreno/go4noobs/tree/master/04_programming_foundations_2/09_return_func)
 10. [_Callbacks_](https://github.com/rafaelbreno/go4noobs/tree/master/04_programming_foundations_2/10_callbacks)
+11. [_Closure_](https://github.com/rafaelbreno/go4noobs/tree/master/04_programming_foundations_2/11_closure)
+12. [_Recursive_](https://github.com/rafaelbreno/go4noobs/tree/master/04_programming_foundations_2/12_recursive)
