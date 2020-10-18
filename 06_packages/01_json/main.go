@@ -21,7 +21,8 @@ type Person struct {
 	Birthday Date
 }
 
-func main() {
+/* Seeing how Marshal func works */
+func partOne() {
 	p := Person{
 		Name:   "John Doe",
 		Age:    20,
@@ -47,4 +48,49 @@ func main() {
 	} else {
 		fmt.Println(string(b))
 	}
+}
+
+/* Seeing how Unmarshal works */
+func partTwo() {
+	var p Person
+
+	b := []byte(`{"Name":"Ramon Doe","Age":32,"Salary":12345.67,"Birthday":{"Day":13,"Month":9,"Year":1987}}`)
+
+	err := json.Unmarshal(b, &p)
+	if err != nil {
+		fmt.Println(err)
+	}
+	// {Ramon Doe 32 12345.67 {13 9 1987}}
+	fmt.Println(p)
+}
+
+/* Marshal when there's tags that
+ * doesn't exist in the original struct */
+func partThree() {
+	var p Person
+	b := []byte(`{
+					"Name":"Ramon Doe",
+					"Age":32,
+					"Random": "AANAuhUHSAKBSADA&!@$",
+					"Salary":12345.67,
+					"Birthday": {
+						"Day":13,
+						"Month":9,
+						"Year":1987,
+						"Random": "This won't show at the exported result"
+					}
+				}`)
+	err := json.Unmarshal(b, &p)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(p)
+}
+
+func main() {
+	partOne()
+
+	partTwo()
+
+	partThree()
 }
