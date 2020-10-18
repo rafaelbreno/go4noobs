@@ -46,6 +46,10 @@
     10. [_Callbacks_](https://github.com/rafaelbreno/go4noobs/tree/master/04_programming_foundations_2/10_callbacks)
     11. [_Closure_](https://github.com/rafaelbreno/go4noobs/tree/master/04_programming_foundations_2/11_closure)
     12. [_Recursive_](https://github.com/rafaelbreno/go4noobs/tree/master/04_programming_foundations_2/12_recursive)
+5. [Data Structures II](https://github.com/rafaelbreno/go4noobs/tree/master/05_data_structures_2)
+    1. [Struct Tags](https://github.com/rafaelbreno/go4noobs/tree/master/05_data_structures_2/01_struct_tags)
+6. [Packages](https://github.com/rafaelbreno/go4noobs/tree/master/06_packages)
+    1. [JSON]()
 99. _Projects_ 
     1. [Go Request Validator](https://github.com/rafaelbreno/go-request-validator)
 ## Introduction
