@@ -84,7 +84,30 @@ func partThree() {
 	if err != nil {
 		fmt.Println(err)
 	}
+	/* {Ramon Doe 32 12345.67 {13 9 1987}}
+	 * Unmarshal will decode only the fields that it can find in the destination type.
+	 * That means the "random" fields will be "ignored"
+	 */
 	fmt.Println(p)
+}
+
+// Decoding without a struct
+func partFour() {
+	var i interface{}
+
+	b := []byte(`{
+					"Name":"Ramon Doe",
+					"Random": "AANAuhUHSAKBSADA&!@$",
+					"Birthday": {
+						"Day":13,
+						"Random": "This will show at the exported result"
+					}
+				}`)
+	err := json.Unmarshal(b, &i)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(i)
 }
 
 func main() {
@@ -93,4 +116,6 @@ func main() {
 	partTwo()
 
 	partThree()
+
+	partFour()
 }
