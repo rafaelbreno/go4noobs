@@ -49,7 +49,7 @@
 5. [Data Structures II](https://github.com/rafaelbreno/go4noobs/tree/master/05_data_structures_2)
     1. [Struct Tags](https://github.com/rafaelbreno/go4noobs/tree/master/05_data_structures_2/01_struct_tags)
 6. [Packages](https://github.com/rafaelbreno/go4noobs/tree/master/06_packages)
-    1. [JSON]()
+    1. [JSON](https://github.com/rafaelbreno/go4noobs/tree/master/06_packages/01_json)
 99. _Projects_ 
     1. [Go Request Validator](https://github.com/rafaelbreno/go-request-validator)
 ## Introduction
