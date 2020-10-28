@@ -112,7 +112,7 @@ func partFour() {
 
 func main() {
 	partOne()
-
+	4
 	partTwo()
 
 	partThree()
