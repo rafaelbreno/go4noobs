@@ -18,6 +18,7 @@
 
 ## Some Useful Links
 - _Official_
+    - [Why Go?](https://go.dev/solutions#case-studies)
     - [Go ref/spec](https://golang.org/ref/spec)
     - [Effective Go](https://golang.org/doc/effective_go.html)
     - [Articles](https://golang.org/doc/#articles)
