@@ -67,6 +67,7 @@
     10. [_Callbacks_](https://github.com/rafaelbreno/go4noobs/tree/master/04_programming_foundations_2/10_callbacks)
     11. [_Closure_](https://github.com/rafaelbreno/go4noobs/tree/master/04_programming_foundations_2/11_closure)
     12. [_Recursive_](https://github.com/rafaelbreno/go4noobs/tree/master/04_programming_foundations_2/12_recursive)
+    12. [_Pointer_](https://github.com/rafaelbreno/go4noobs/tree/master/04_programming_foundations_2/13_pointer)
 5. [Data Structures II](https://github.com/rafaelbreno/go4noobs/tree/master/05_data_structures_2)
     1. [Struct Tags](https://github.com/rafaelbreno/go4noobs/tree/master/05_data_structures_2/01_struct_tags)
     2. [Channels](https://github.com/rafaelbreno/go4noobs/tree/master/05_data_structures_2/02_channels)
