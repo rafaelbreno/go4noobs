@@ -14,15 +14,17 @@ func changeValue(i *int) {
 func printVar(i *int, delay time.Duration) {
 	go func() {
 		time.Sleep(delay)
-		fmt.Println("Delay 2s", *i)
+		fmt.Printf("Delay %.0fs - %d\n", delay.Seconds(), *i)
+		*i++
 	}()
 }
 
 func main() {
 	i := 10
 	time2s, _ := time.ParseDuration("2s")
+	time5s, _ := time.ParseDuration("5s")
 
-	printVar(&i, time2s)
+	printVar(&i, time5s)
 
 	changeValue(&i)
 
