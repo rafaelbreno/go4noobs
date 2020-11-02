@@ -5,7 +5,7 @@
 - In this case I'll be sticking with the _html_ package
 - To show the built page the package _net/http_ should be imported
 - The base of this example will be
--   ``go
+-   ```go
         // Helper to panic errors
         func checkErr(err error) {
         	if err != nil {
@@ -24,7 +24,7 @@
         	http.ListenAndServe(":3000", nil)
         }
 
-    ``
+    ```
     - _checkErr:_ Simple helper to panic errors
     - _test:_ Func that will handle http access and draw the HTML
 - Now with the base we can start with the _html/template_
