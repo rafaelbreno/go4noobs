@@ -30,7 +30,7 @@
 - Now with the base we can start with the _html/template_
 #### _Level 1_
 - For this level the best way to start would be the famous _Hello, World!_
--   ``go
+-   ```go
         // Literally writing pure HTML, nothing advanced
         func getTemplate() string {
         	t := `
@@ -67,5 +67,10 @@
         	// Converting bytes.Buffer to String
         	return tpl.String()
         }
-    `` 
+    ``` 
 - This will generate a simple webpage at _localhost:3000_ 
+#### Level 2
+- In this level we'll see some data
+-   ``go
+
+    ``
