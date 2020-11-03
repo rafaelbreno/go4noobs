@@ -237,3 +237,10 @@
         	return tpl.String()
         }
     ```
+#### _Level 4_
+- Now we'll inject some html snippets inside the template
+- Almost like [Laravel Blade](https://laravel.com/docs/master/blade) _@yield() / @sections()_ tags
+-   ```go
+
+    ```
+

@@ -9,93 +9,48 @@ import (
 
 type HTMLData struct {
 	Title string
-	H2    string
-	Ul    []Li
+	H1    string
 }
 
-// Struct to generate a list
-type Li struct {
-	InnerText string
-	TextColor string
-	BGColor   string
+func getRawTemplate() string {
+	return `
+		<html>
+			<head>
+				<title></title>
+			</head>
+			<body>
+				<h1></h1>
+			</body>
+		</html>
+	`
 }
 
-// Literally writing pure HTML, nothing advanced
-func getTemplate() string {
-	/* Now we'll be injecting data into
-	 * our html template
-	 * each {{ . }} refers to an item
-	 * so if there's a {{ .Foo }}
-	 * this will be referring to a data named _Foo_
-	 */
-	t := `
-	<html>
-		<head>
-			<title>{{ .Title }}</title>
-		</head>
-		<body>
-			<h2>{{ .H2 }}</h2>
-			{{ if .Ul }}			
-			<ul>
-				{{ range .Ul }}
-					<li style="color: {{ .TextColor }}; background-color: {{ .BGColor }}">
-						{{ .InnerText }}
-					</li>	
-				{{ end }}
-			</ul>
-			{{ end }}
-		</body>
-	</html>
-		 `
-	// Return html string
+func buildTemplate() *template.Template {
+	t, err := template.New("main").Parse(getRawTemplate())
+	checkErr(err)
 	return t
 }
 
-// Building HTML template
-func getHtml() string {
+func getData() HTMLData {
+	return HTMLData{
+		Title: "Lorem Ipsum",
+		H1:    "Go Templates Example",
+	}
+}
 
-	/* This will store the template buffer
-	 * so it can be converted to string later
-	 */
+func getBuiltTemplate(t *template.Template) string {
 	var tpl bytes.Buffer
 
-	// Defining our data
-	data := HTMLData{
-		Title: "Go Templatesl",
-		H2:    "Successfully inject text",
-		Ul: []Li{
-			{
-				InnerText: "Black",
-				TextColor: "#FFFFFF",
-				BGColor:   "#000000",
-			},
-			{
-				InnerText: "Blue",
-				TextColor: "#000000",
-				BGColor:   "#0000FF",
-			},
-			{
-				InnerText: "Red",
-				TextColor: "#FFFFFF",
-				BGColor:   "#FF0000",
-			},
-		},
-	}
-
-	// Parsing html string
-	t, err := template.New("hello").Parse(getTemplate())
+	err := t.Execute(&tpl, getData())
 	checkErr(err)
 
-	/* Writing Template into bytes.Buffer
-	 * and injecting the data struct
-	 * into template tags {{ .Foo }}
-	 */
-	err = t.Execute(&tpl, data)
-
-	checkErr(err)
-
-	// Converting bytes.Buffer to String
 	return tpl.String()
+}
+
+func getHtml() string {
+	t := buildTemplate()
+
+	return getBuiltTemplate(t)
 }
 
 /*---------- App base ---------*/
