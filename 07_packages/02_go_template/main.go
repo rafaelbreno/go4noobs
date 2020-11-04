@@ -12,14 +12,19 @@ type HTMLData struct {
 	H1    string
 }
 
+var tpl bytes.Buffer
+
+/*
+ *
+**/
 func getRawTemplate() string {
 	return `
 		<html>
 			<head>
-				<title></title>
+				<title>{{ define "Title" }}{{ .Title }}{{end}}</title>
 			</head>
 			<body>
-				<h1></h1>
+				<h1>{{ template "Header1" }}</h1>
 			</body>
 		</html>
 	`
@@ -38,8 +43,15 @@ func getData() HTMLData {
 	}
 }
 
+func yield(t *template.Template, section string, value string) *template.Template {
+	/* With this function we can
+	 *insert values inside templates
+	 */
+	t.New(section).Parse(value)
+	return t
+}
+
 func getBuiltTemplate(t *template.Template) string {
-	var tpl bytes.Buffer
 
 	err := t.Execute(&tpl, getData())
 	checkErr(err)
@@ -49,6 +61,8 @@ func getBuiltTemplate(t *template.Template) string {
 
 func getHtml() string {
 	t := buildTemplate()
+
+	t = yield(t, "Header1", "Allo aloo")
 
 	return getBuiltTemplate(t)
 }
