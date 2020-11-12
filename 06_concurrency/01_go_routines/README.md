@@ -3,6 +3,7 @@
 - _"A goroutine has a simple model: it is a function executing concurrently with other goroutines in the same address space"_
 - So if one goroutine stops while waiting for something the others can continue to run
 -   ```go
+        // main.go
         package main
         
         import (
@@ -50,4 +51,11 @@
         	c := time.Tick(500 * time.Millisecond)
         }
      ```
-
+### Waitgroup
+- This isn't usual, having +2 chapters in the same, but this case is special
+- We'll be seeing the source package [_sync_](https://golang.org/pkg/sync/)
+- When I was trying to come up with an example happened to the program end before the go routine
+- Because "Go Routine" is a process executed asynchronously, so when the "main()" block ends, the running go routine, stops too, even before it finishes
+-   ```go
+        
+    ```

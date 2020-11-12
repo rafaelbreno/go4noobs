@@ -23,9 +23,12 @@
     - [Effective Go](https://golang.org/doc/effective_go.html)
     - [Articles](https://golang.org/doc/#articles)
     - [_Gopher Code of Conduct_](https://golang.org/conduct#values)
+    - [Style Guide](https://github.com/golang/go/wiki/CodeReviewComments)
 - _Community_
     - [Go By Example](https://gobyexample.com/)
         - Like a cheatsheet for _Go_
+    - [Go Cheatsheet](https://devhints.io/go) 
+    - [Awesome Go](https://awesome-go.com/)
 ## Summary
 1. [Variables and Types](https://github.com/rafaelbreno/go4noobs/tree/master/01_variables_and_types)
     01. [_Hello World_](https://github.com/rafaelbreno/go4noobs/tree/master/01_variables_and_types/01_Hello_World)
