@@ -1,4 +1,10 @@
 # Go
+<div style="text-align:center">
+    <img src="https://github.com/rafaelbreno/go4noobs/blob/master/.src/RAMISTI.png?raw=true" alt="Go4Noobs" />
+</div>
+<div style="text-align:right">
+    <small>Art by [Lora]https://twitter.com/loraoraora_)</small>
+</div>
 - __Disclaimer!!__
 - __ 👨‍💻 👩‍💻 In development 🚧 🛠 __
 - This repo __must__ and __will__ suffer some __major__ updates and modifications along with my learning curve
