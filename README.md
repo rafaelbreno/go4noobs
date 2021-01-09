@@ -3,7 +3,7 @@
     <img src="https://github.com/rafaelbreno/go4noobs/blob/master/.src/RAMISTI.png?raw=true" alt="Go4Noobs" />
 </div>
 <div style="text-align:right">
-    <small>Art by [Lora]https://twitter.com/loraoraora_)</small>
+    Art by <a href="https://twitter.com/loraoraora_" target="_blank">@Lora</a>
 </div>
 
 - __Disclaimer!!__
