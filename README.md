@@ -2,9 +2,9 @@
 <div style="text-align:center">
     <img src="https://github.com/rafaelbreno/go4noobs/blob/master/.src/RAMISTI.png?raw=true" alt="Go4Noobs" />
 </div>
-<div style="text-align:right">
-    Art by <a href="https://twitter.com/loraoraora_" target="_blank">@Lora</a>
-</div>
+<small>Art by <a href="https://twitter.com/loraoraora_">@Lora</a></small>
+
+-------
 
 - __Disclaimer!!__
 - __ 👨‍💻 👩‍💻 In development 🚧 🛠 __
