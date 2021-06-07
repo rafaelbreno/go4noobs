@@ -45,7 +45,7 @@ func main() {
 	 */
 	c := time.Tick(500 * time.Millisecond)
 
-	for _ = range c {
+	for range c {
 		fmt.Println(i)
 	}
 }
