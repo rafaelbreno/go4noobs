@@ -45,6 +45,7 @@
 
 - That was a simple example, but there's an important topic about it
     - The channel will pause the execution of a program, until it have received the value of it
+    - This is known as _channel syncronization_
 - You can see it in the example below:
 ```golang
 package main
