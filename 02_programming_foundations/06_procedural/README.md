@@ -1,13 +1,13 @@
 #### Procedural Programming
 - Procedural programming is a programming paradigm
     - The simplest way to explain it is: the program will be executed line by line
--   ```go
-        func main() {
-            fmt.Printf(var01) // Flag 01
-            var01 := "Hello Coder!!" // Flag 02
-            fmt.Printf(var01) // Flag 03
-        }
-    ```
+```go 
+func main() {
+  fmt.printf(var01) // flag 01
+  var01 := "hello coder!!" // flag 02
+  fmt.printf(var01) // flag 03
+}
+```
 - If you run the code above will get an error, why?
 - Because you printed the variable before declaring it
     - At the _Flag 01_ the program don't "know" the existence of the variable __var01__ _yet_
